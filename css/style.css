@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#E8DAEF  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Benne',serif;
+}
+/*personal profile*/
+
+.main-container{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    min-height: 1000px;
+    margin:50px;
+    background-color: #fff;
+    box-shadow: 10px 20px 20px rgba(195, 155, 211 );
+    
+}
+.main-container .left-side{
+    
+    position:relative;
+    background-color:#4A235A;
+    padding:40px;
+    
+}
+.main-container .right-side{
+
+    position:relative;
+    background-color:#fff;
+    padding:40px;
+}
+/*-------------------left-side----------------------*/
+.profileText{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed rgba(255,255,255);
+   
+}
+.profileText .profileImage{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.profileText .profileImage img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.profileText h3{
+    color:white;
+    font-size: 1.5em;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h5{
+    color:#BB8FCE;
+    font-size:1.25em;
+    font-weight: 400;
+    
+}
+
+/* contact details */
+.contactInfo{
+    padding-top: 40px;
+}
+
+.contactInfo h3{
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1px;
+   /* margin-left:30px;*/
+    text-transform: uppercase;
+    margin-bottom:20px;
+
+}
+.contactInfo ul{
+    position: relative;
+    
+    
+}
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    
+    margin:10px 0px;
+    cursor:pointer;
+
+}
+.contactInfo .row{
+    margin-left: -45px;
+}
+@media screen and (max-width:650px) {
+    .contactInfo .row{
+        margin-left: -10px;
+    }
+}
+
+.contactInfo .row .icon{
+    display: inline-block;
+    width:35px;
+    font-size: 20px;
+    color:#BB8FCE;
+
+    
+}
+.contactInfo .row .text{
+    color:#fff;
+    font-weight: 300;
+    
+    
+}
+.contactInfo .row span{
+    line-height: 2.0;
+}
+.contactInfo.education ul{
+    margin-left: -30px;
+}
+.contactInfo.education li{
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+
+.contactInfo.education  h4:nth-child(2){
+    color:#fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contactInfo.education  h4{
+ color:#E8DAEF;
+ font-weight: 300;
+}
+.contactInfo.languages ul{
+    margin-left: -30px;
+}
+.contactInfo.languages li .text{
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color:white;
+    
+}
+.contactInfo.languages  .progress-bar{
+    background-color:#A569BD;
+}
+/*-----------achievements-------------------------*/
+.contactInfo.achievements ul{
+    list-style: none;
+    margin-left: -30px;
+}
+.contactInfo.achievements h4{
+    color:#BB8FCE;
+}
+.contactInfo.achievements p{
+    color:#E8DAEF;
+}
+
+
+
+/*-------------------right-side----------------------*/
+
+.about h3{
+    color:#4A235A ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom:20px; 
+    margin-top:20px;
+}
+.about.experience .duration{
+    font-weight:800;
+    color:#4A235A;
+}
+.about.experience .duration span{
+    color:#A569BD;
+    font-weight:500;
+    font-size: 20px;
+  
+}
+
+.about.experience .description{
+    font-size: 15px;
+}
+.about.experience .row{
+    margin-top:10px;
+}
+/*--------technicalskills-------------------*/
+.about.technicalSkills .row {
+    line-height:2.0;
+
+}
+.about.technicalSkills .row .col .progress{
+   margin-top: 10px;
+  
+}
+.about.technicalSkills .row .col .progress-bar{
+    background-color:#A569BD ;
+}
+.about.technicalSkills .row  .title{
+    color:#4A235A;
+    font-weight: 500;
+}
+/*---------projects------------*/
+.about.projects ul{
+   list-style:none;
+   margin-left: -30px;
+}
+.about.projects h4{
+    color:#A569BD;
+    margin-bottom:20px;
+}
+.about.projects h5{
+    color:#4A235A;
+    margin-top:5px;
+}
+/*------------interests-----------------*/
+.about.interests ul{
+    margin-left: -15px;
+}
+.about.interests li{
+    list-style-type: disc ;
+    
+    color:#BB8FCE;
+}
+.about.interests li h4{
+    color:#4A235A;
+}
+/*-------------certification------------------*/
+.about.certifications ul{
+    list-style: none;
+    margin-left: -30px;
+}
+.about.certifications li h4{
+    color:#4A235A;
+
+}
+.about.certifications li h5{
+    color:#A569BD;
+}
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color:#A569BD ;
+    border:2px solid white;
+}
+.download:hover{
+    background-color: #4A235A;
+    border:none;
+}
+.download a{
+    text-decoration: none;
+    color:white;
+}
+
